@@ -1,0 +1,16 @@
+{
+  "name": "mygulp",
+  "version": "1.0.0",
+  "description": "test gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "seven",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-cssmin": "^0.1.7",
+    "gulp-less": "^3.3.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}
