@@ -1,0 +1,1 @@
+#div1,#div2{padding:20px;width:200px;height:100px}#div1{border:2px solid red;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px}#div2{border:2px solid green;border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px}#div1 span a{font-size:14px;text-decoration:none}#div1 span a:hover{color:red}.test:nth-child(1){font-size:18px}

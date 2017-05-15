@@ -1,0 +1,45 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+a {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+}
+a img {
+  width: 200px;
+  height: 150px;
+}
+a span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  display: none;
+}
+a:hover span {
+  display: block;
+}
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: none;
+  vertical-align: middle;
+}
+.mask img {
+  margin-top: 20px;
+  position: absolute;
+}

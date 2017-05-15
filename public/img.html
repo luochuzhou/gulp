@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/img.css">
+</head>
+<body>
+
+    <a id="click" href="#">
+        <span>查看大图</span>
+        <img src="./img/1.jpg" alt="">
+    </a>
+
+    <div class="mask">
+        <img src="./img/1.jpg" alt="">
+    </div>
+</body>
+<script>
+    window.onload = function(){
+
+        var a = document.querySelector("#click");
+        var mask = document.querySelector(".mask");
+        var img = mask.firstElementChild;
+        var body = window.document.body;
+
+        a.addEventListener("click",function(){
+            mask.style.display = "block";
+            var height = img.offsetHeight;
+            var width = img.offsetWidth;
+            img.style.top = "50%";
+            img.style.left = "50%";
+            img.style.marginTop = -(height/2)+"px";
+            img.style.marginLeft = -(width/2)+"px";
+        });
+
+       body.addEventListener("click",function(){
+           mask.style.display = "none";
+       },true);
+
+    }
+</script>
+</html>
